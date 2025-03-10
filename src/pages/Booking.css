@@ -1,0 +1,244 @@
+.booking-page {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.booking-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: white;
+  border-radius: 15px;
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+}
+
+.booking-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.booking-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.google-form-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.google-form-container iframe {
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .booking-header {
+    padding: 1.5rem;
+    margin: 0 1rem 2rem;
+  }
+
+  .booking-header h1 {
+    font-size: 2rem;
+  }
+
+  .booking-header p {
+    font-size: 1rem;
+  }
+
+  .google-form-container {
+    padding: 0 10px;
+  }
+}
+
+.booking-hero {
+  height: 40vh;
+  background-image: url('https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.booking-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.booking-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.booking-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.booking-hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.booking-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.info-box h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.info-list li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.info-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.contact-methods {
+  margin-top: 1.5rem;
+}
+
+.contact-method {
+  margin-bottom: 1rem;
+}
+
+.contact-method strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #555;
+}
+
+.contact-method p {
+  margin: 0;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+/* Success page styles */
+.booking-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.success-content {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.success-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #2ecc71;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin: 0 auto 2rem;
+}
+
+.success-content h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.booking-summary {
+  margin: 2rem 0;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.booking-summary h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.summary-details {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary-item span:first-child {
+  font-weight: 500;
+  color: #555;
+}
+
+.contact-info {
+  margin-top: 2rem;
+  color: #666;
+}
+
+@media (max-width: 992px) {
+  .booking-hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .success-content {
+    padding: 2rem;
+  }
+} 
